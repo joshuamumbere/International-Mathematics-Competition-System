@@ -153,11 +153,48 @@ The system uses a relational database with the following tables:
    ```sql
    CREATE DATABASE math_competition;
 3. **Configure the server application**
-4. **Build and run the server application**
-5. **Set up the web interface:**
-6. **Update the `.env` file with your database and email server credentials:**
-7. **Run the database migrations to set up the values**
-8. **Serve the application**
+   Update the `config.properties` file with your database credentials
+   `db.url=jdbc:mysql://localhost:3306/math_competition
+    db.username=your_db_username
+    db.password=your_db_password
+    email.smtp.server=smtp.your-email-provider.com
+    email.smtp.port=587
+    email.username=your_email@example.com
+    email.password=your_email_password
+   `
+5. **Build and run the server application**
+   ```sh
+   cd server
+   mvn clean install
+   java -jar target/server.jar
+7. **Set up the web interface:**
+   ```sh
+   cd web
+   composer install
+   cp .env.example .env
+   php artisan key:generate
+9. **Update the `.env` file with your database and email server credentials:**
+    `DB_CONNECTION=mysql
+     DB_HOST =127.0.0.1
+     DB_PORT =3306
+     DB_DATABASE=math_competition
+     DB_USERNAME =your_db_username
+     DB_PASSWORD =your_db_password
+     MAIL_MAILER =smtp
+     MAIL_HOST =smtp.your-email-provider.com
+     MAIL_PORT = 587
+     MAIL_USERNAME =your_email@example.com
+     MAIL_PASSWORD =your_email_password
+     MAIL_ENCRYPTION= tls
+     MAIL_FROM_ADDRESS= your_email@example.com
+     MAIL_FROM_NAME ="${APP_NAME}"
+   `
+10. **Run the database migrations to set up the values**
+    ```sh
+    php artisan migrate
+11. **Serve the application**
+    ```sh
+    php artisan serve
 
 ### Usage
 CLI Commands
@@ -174,7 +211,7 @@ CLI Commands
 3. **Upload Answes(POST `/admin/upload-answers`):**
 4. **Set Challenge Parameters(POST `/admin/set-challenge-params`):**
 
-## REPORTs AND ANALYSIS
+## REPORTS AND ANALYSIS
   **Most Correctly Answered Questions**
   **School Rankings**
   **Performance of Schools and Participants Over Time**
