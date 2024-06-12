@@ -196,7 +196,7 @@ The system uses a relational database with the following tables:
     ```sh
     php artisan serve
 
-### Usage
+#### Usage
 CLI Commands
 
 1. **Register a participant:**
