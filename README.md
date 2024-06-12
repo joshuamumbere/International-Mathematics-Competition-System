@@ -200,9 +200,21 @@ The system uses a relational database with the following tables:
 CLI Commands
 
 1. **Register a participant:**
+   ```sh
+   register username firstname lastname email date_of_birth school_registration_number image_file.png
+
 2. **View available challenges:**
+   ```sh
+   viewChallenges
+
 3. **Attempt a challenge:**
+   ```sh
+   attemptChallenge challengeNumber
+
 4. **View results of attempted challenges:**
+   ```sh
+   viewResults
+
 
 ## API Endpoints
 
