@@ -1,4 +1,5 @@
 # International-Mathematics-Competition-System
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 This project implements a web-based system for managing an International Mathematics Competition for primary school children.
 
 ## Overview
@@ -145,3 +146,52 @@ The system uses a relational database with the following tables:
    ```sh
    git clone https://github.com/joshuamumbere/International-Mathematics-Competition-System.git
    cd International-Mathematics-Competition-System
+2. **Set up the database:**
+   - Create a database named `math_competition`.
+   - Run the SQL scripts in the `db` directory to set up the tables:
+
+   ```sql
+   CREATE DATABASE math_competition;
+3. **Configure the server application**
+4. **Build and run the server application**
+5. **Set up the web interface:**
+6. **Update the `.env` file with your database and email server credentials:**
+7. **Run the database migrations to set up the values**
+8. **Serve the application**
+
+### Usage
+CLI Commands
+
+1. **Register a participant:**
+2. **View available challenges:**
+3. **Attempt a challenge:**
+4. **View results of attempted challenges:**
+
+## API Endpoints
+
+1. **Upload Schools(POST `/admin/upload-schools`):**
+2. **Upload Questions(POST `/admin/upload-questions`):**
+3. **Upload Answes(POST `/admin/upload-answers`):**
+4. **Set Challenge Parameters(POST `/admin/set-challenge-params`):**
+
+## REPORTs AND ANALYSIS
+  **Most Correctly Answered Questions**
+  **School Rankings**
+  **Performance of Schools and Participants Over Time**
+  **List of Worst Performing Schools**
+  **List of Best Performing Schools**
+  **List of PArticipants with Incomplete Challenges**
+
+## CONTRIBUTING
+  I welcome contributions! Please follow these steps:
+    1.**Fork the repository**
+    2.**Create a new branch(`git checkout -b feature-branch`)**
+    3.**Make your changes**
+    4.**Commit your changes(`git commit -m 'Added some feature'`)**
+    5.**Push to the branch(`git push origin feature-branch`)**
+    6.**Open a pull request.**
+
+## License
+ This project is licensed under the [MIT License](./LICENSE). Feel free to use and modify this template for your own recess projects.
+
+---
